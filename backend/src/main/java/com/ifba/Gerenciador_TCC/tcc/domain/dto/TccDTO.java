@@ -32,7 +32,6 @@ public class TccDTO {
     @NotNull(message = "O status do TCC é obrigatório")
     private Boolean status;
 
-
     @NotNull(message = "O ID do aluno não pode ser vazio")
     private Long idAluno;
 
