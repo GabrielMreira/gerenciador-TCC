@@ -4,7 +4,7 @@ import com.ifba.Gerenciador_TCC.projeto.domain.entity.Projeto;
 import org.springframework.http.ResponseEntity;
 import java.util.List;
 
-public interface ProjetoControllerApi {
+public interface ProjetoController {
 
     ResponseEntity<List<Projeto>> listarProjetos();
 

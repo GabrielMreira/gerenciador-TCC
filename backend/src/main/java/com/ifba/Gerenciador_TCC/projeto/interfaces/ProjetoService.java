@@ -5,7 +5,7 @@ import com.ifba.Gerenciador_TCC.projeto.domain.entity.Projeto;
 import java.util.List;
 
 
-public interface ProjetoServiceApi {
+public interface ProjetoService {
 
     List<Projeto> listarProjetos();
 

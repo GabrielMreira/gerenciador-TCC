@@ -2,7 +2,7 @@ package com.ifba.Gerenciador_TCC.projeto.service;
 
 import com.ifba.Gerenciador_TCC.exceptions.NotFoundException;
 import com.ifba.Gerenciador_TCC.projeto.domain.entity.Projeto;
-import com.ifba.Gerenciador_TCC.projeto.interfaces.ProjetoServiceApi;
+import com.ifba.Gerenciador_TCC.projeto.interfaces.ProjetoService;
 import com.ifba.Gerenciador_TCC.projeto.repository.ProjetoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ProjetoService implements ProjetoServiceApi {
+public class ProjetoServiceImpl implements ProjetoService {
 
     @Autowired
     private ProjetoRepository projetoRepository;

@@ -1,7 +1,7 @@
 package com.ifba.Gerenciador_TCC.projeto.controller;
 
 import com.ifba.Gerenciador_TCC.projeto.domain.entity.Projeto;
-import com.ifba.Gerenciador_TCC.projeto.interfaces.ProjetoControllerApi;
+import com.ifba.Gerenciador_TCC.projeto.interfaces.ProjetoController;
 import com.ifba.Gerenciador_TCC.projeto.repository.ProjetoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/projeto")
-public class ProjetoController implements ProjetoControllerApi {
+public class ProjetoControllerImpl implements ProjetoController {
 
     @Autowired
     private ProjetoRepository projetoRepository;
