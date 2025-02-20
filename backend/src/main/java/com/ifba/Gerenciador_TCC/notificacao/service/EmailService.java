@@ -24,7 +24,7 @@ public class EmailService {
 
     public String enviarEmailTexto(String destinatario, String assunto, String mensagem, String remetenteNotificacao) {
         try {
-            // Envio do e-mail
+           
             SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
             simpleMailMessage.setFrom(remetente);
             simpleMailMessage.setTo(destinatario);
@@ -32,7 +32,7 @@ public class EmailService {
             simpleMailMessage.setText(mensagem);
 
             mailSender.send(simpleMailMessage);
-            // vai criar uma notificação com o remetente como parâmetro, após enviar o email.
+            
             Notificacao notificacao = new Notificacao();
             notificacao.setRemetente(remetenteNotificacao);
             notificacao.setMensagem(mensagem);
@@ -50,7 +50,7 @@ public class EmailService {
     
     public String enviarEmailApenas(String destinatario, String assunto, String mensagem) {
         try {
-            // Envio do e-mail
+           
             SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
             simpleMailMessage.setFrom(remetente);
             simpleMailMessage.setTo(destinatario);
