@@ -11,7 +11,7 @@ public class EmailController {
     @Autowired
     private EmailService emailService;
 
-    // Endpoint atualizado para receber também o remetente da notificação
+    
     @PostMapping("/teste")
     public String testarEnvioEmail(@RequestParam String para, 
                                    @RequestParam String assunto, 
